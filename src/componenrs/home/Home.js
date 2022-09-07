@@ -65,6 +65,7 @@ export default function Home() {
         );
     }
 
+    // Board of Height click-through rates for your product
     const group1 = () => {
         return (
             <div className='board-t1'>
@@ -80,6 +81,7 @@ export default function Home() {
         );
     }
 
+    // Board of How BetterGoods works?
     const group2 = () => {
         return (
             <div className='board-t2'>
@@ -98,12 +100,12 @@ export default function Home() {
                         <Col key={index} xs={24} sm={12} md={12} lg={6} xl={6} xxl={4}>
                             {console.log(val)}
                             <Cards
-                                data={val}
-                                cardPaddingLeft={0}
-                                cardPaddingRight={0}
-                                cardPaddingTop={0}
-                                cardPaddingBottom={0}
-                                radius={10}
+                                data={val}              // information
+                                cardPaddingLeft={0}     // size
+                                cardPaddingRight={0}    // size
+                                cardPaddingTop={0}      // size
+                                cardPaddingBottom={0}   // size
+                                radius={10}             // size
                             />
                         </Col>
                     )}
@@ -113,6 +115,7 @@ export default function Home() {
         );
     }
 
+    // Board of Power-up your performance
     const group3 = () => {
         return (
             <div className='board-t3'>
@@ -164,7 +167,7 @@ export default function Home() {
                                 data={val}                                                                          // information
                                 cardPaddingLeft={width > 768 ? (index === 0 ? 0 : 10) : 0}                          // size
                                 cardPaddingRight={width > 768 ? ((cardInfo2.length - 1) === index ? 0 : 10) : 0}    // size
-                                cardPaddingTop={(width > 768 ? 10 : 0)}                                            // size
+                                cardPaddingTop={(width > 768 ? 10 : 0)}                                             // size
                                 cardPaddingBottom={50}                                                              // size
                                 radius={0}                                                                          // size
                                 textLocal={"center"}                                                                // left, right, center
@@ -180,7 +183,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <Content style={{ backgroundColor: "#F5F5F5" }}>
+            <Content>
                 <div className='layout-body'>
                     <div
                     // style={{ paddingLeft: (width > 1100 ? '10%' : '5%'), paddingRight: (width > 1100 ? '10%' : '5%'), paddingTop: 0 }}
