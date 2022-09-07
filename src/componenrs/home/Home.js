@@ -97,7 +97,7 @@ export default function Home() {
                     </Col>
 
                     {cardInfo1.map((val, index) =>
-                        <Col key={index} xs={24} sm={12} md={12} lg={6} xl={6} xxl={4}>
+                        <Col key={index} xs={24} sm={12} md={12} lg={6} xl={6}>
                             {console.log(val)}
                             <Cards
                                 data={val}              // information
