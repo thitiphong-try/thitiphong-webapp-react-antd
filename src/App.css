@@ -1,0 +1,120 @@
+@import "~antd/dist/antd.css";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.layout-body{ 
+  min-height: 100vh; 
+  margin: 0; 
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.layout-header{ 
+  min-height:50px;
+  background-color: white;
+}
+
+.layout-footer{ 
+  min-height:50px; 
+}
+
+.board-t1{
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.board-t2{
+  background-color: #EEEEEE;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.board-t3{
+  background-image: url("../public/assets/power-up-1.png");
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+.board-t4{
+  background-color: #EEEEEE;
+  padding-top: 30px;
+  /* padding-bottom: 50px; */
+}
+
+.title-sz-bl-t1 {
+  font-size: 40px;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+
+.title-sz-bl-t2 {
+  font-size: 30px;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+
+.title-sz-bl-t3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.desc-t1 {
+  font-size: 18px;
+}
+
+.layout-card{
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.ant-card-cover {
+  padding: 0pt;
+}
+
+.menu-handle:hover {
+  /* text-decoration: underline; */
+  cursor: pointer;
+  color: #0097ec;
+}
